@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+
 import { Link } from 'gatsby'
-import Navigation from '../Navigation/Navigation'
 import Logo from '../../images/lederhusetlogo.png'
 import clsx from 'clsx'
 import { makeStyles, useTheme } from '@material-ui/core/styles'
@@ -9,9 +9,18 @@ import Drawer from '@material-ui/core/Drawer'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
+import List from '@material-ui/core/List'
+import Typography from '@material-ui/core/Typography'
+import Divider from '@material-ui/core/Divider'
 import IconButton from '@material-ui/core/IconButton'
 import MenuIcon from '@material-ui/icons/Menu'
-
+import ChevronLeftIcon from '@material-ui/icons/ChevronLeft'
+import ChevronRightIcon from '@material-ui/icons/ChevronRight'
+import ListItem from '@material-ui/core/ListItem'
+import ListItemIcon from '@material-ui/core/ListItemIcon'
+import ListItemText from '@material-ui/core/ListItemText'
+import HomeIcon from '@material-ui/icons/Home'
+import ListIcon from '@material-ui/icons/ViewList'
 import { Hidden } from '@material-ui/core'
 
 const drawerWidth = 240
@@ -109,7 +118,7 @@ const Header = ({ siteTitle }) => {
         })}
       >
         <Toolbar>
-          <Hidden xsUp >
+          <Hidden mdDown >
             <IconButton
               color="inherit"
               aria-label="Open drawer"
@@ -123,7 +132,7 @@ const Header = ({ siteTitle }) => {
           <img className={classes.logo}src={Logo}></img>
         </Toolbar>
         <nav>
-        <Navigation />
+          <p>ss</p>
         </nav>
       </AppBar>
     </div>
